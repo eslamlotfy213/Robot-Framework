@@ -1,0 +1,164 @@
+Robot Framework: 
+open souece test autoamtio framework for acceptanc testing it follows different test cases styles - keyword driver - behavior driven and data driven for writing test cases 
+Robot framework has easly synatx  utlizing human readable keywords by python or java 
+libraray provides the actual auotmation and testing capabliltes to Robot Framework
+Robot framework used to web Automation , API Automation , RPA Database Testing 
+Excellent HTML Reports
+Complete Loggin of Test Execution 
+Tagging and execution 
+Paramterizing test with Mulitple Data Sets 
+Data Driven Testing capabliltes
+Setup and Tear Down methods 
+Parallel Execution with Thread Safe 
+Framework tests can be integrated with CI/CD jenkins 
+
+
+
+- Selected progammming lannguage is python
+70% selenuim libraray
+20% API Testing Library 
+10% Database Library
+
+--------4. Install Python and its related configurations in Global variables-
+
+download : https://www.python.org/downloads/
+enviroment variable
+Edit path
+Add New and the path of python
+C:\Program Files\Python310
+C:\Program Files\Python310\Scripts
+go command promotr  : python --version
+
+
+what is pip ? 
+standard package manger for python , it allows you yo install and manage additional packages that are not part of 
+the python standard libraray
+
+pip :> dh by3mel inject all libraray 3ala python software 
+
+
+-----------------6. Install Robot Framework & Selenium Libraries to setup the Project
+install 
+1.open CMD 
+2.pip install robotframework
+3.pip install --upgrade robotframework-seleniumlibrary
+4.install https://www.jetbrains.com/pycharm/?var=1
+5.when open project 
+6.select interpreter : AppData
+7.need to configure the installed robotframework and seleniumlibrary on the pycharm 
+8. search for plugins > Hyper RobotFramewok support
+9.Alternate way of Installing Robot Framework Plugin
+10.Follow below instructions, if Plugin Installation which shown in last lecture did not get installed for any reason
+11.Download the plugin from the below link and place it under Scripts folder(Please refer the screenshot for the path)
+https://plugins.jetbrains.com/plugin/16382-hyper-robotframework-support/versions
+12.if the above solution doesn't work then give a try with the below link,
+https://forum.robotframework.org/t/replace-robot-framework-support/3743
+13.Execute robot file using the below command,
+14.python -m robot "filename.robot"
+Note : Plugin install is not mandatory to progress in the course
+ https://stackoverflow.com/questions/76453431/fixing-the-environment-location-directory-is-not-empty-error
+ pip install -r requirements.txt
+
+
+
+dh has all library :
+C:\Users\Eslam.Lotfy\AppData\Roaming\Python\Python310\site-packages
+
+---------------------solved the problem for interpretd ------------------------------------------------
+pip install selenium
+pip install robotframework
+pip install robotframwork-seleniumlibrary
+ 
+copy the files  [C:\Users\Eslam.Lotfy\AppData\Roaming\Python\Python310\site-packages]   to   [C:\Users\Eslam.Lotfy\PycharmProjects\Robot_Framework_Project\.venv\Scripts]
+
+
+-----------------------------------install plugin -------------------------------------------------------
+search for -> Hyper RobotFramework Support
+
+-------------------------create a project -------------------------------------------------------------
+https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
+
+create project 
+1. create dirctory  tests
+2. create a file Demotest1.robot 
+3. lazem extension .robot
+-  *** Settings ***   // dh module 
+-  Documentation  To validate the login form  // dh description
+-  Library  SeleniumLibrary // dh for seleniumlibrary
+-  *** Test Cases *** // dh module  for testcases 
+- *** Keywords ***    // dh module  for Keywords 
+---------------------------9. Invoking Browsers for Web Automation with Selenium using Robot Keyword-----------------------------------------
+//dh el scripts
+*** Settings ***
+Documentation    Suite description
+Library     SeleniumLibrary
+
+*** Test Cases ***
+Validate UnSucessful Login
+    open the browser with the Mortage payment url
+    #Fill the login Form
+    #wait until it checks and display error message
+    #verify if error message is correct
+
+
+*** Keywords ***
+open the browser with the Mortage payment url
+    Create webdriver    Chrome  options.add_experimental_option("detach", True)
+    GO TO  https://rahulshettyacademy.com/loginpagePractise/
+
+
+
+
+//dh for running  
+python -m robot .\tests\testDemo1.robot
+
+
+
+//dh for make browser not closed 
+Chrome  options.add_experimental_option("detach", True)
+
+-----------------------10. Learning Synchronization Robot keywords & error messages validations------------------------------------------
+// to create a variable  ${results}
+//  Wait Until Element Is Visible   ${error_message}
+
+--------------------11. How to declare and use the variables in the Robot files for global use--------------------------------------------
+1.create variable *** Variables ***
+2. add ${error_message} css:.alert-danger
+
+Exmaple:
+*** Variables ***
+${error_message}   css:.alert-danger
+
+------------------------------close browser --------------------------------
+//dh mawgood fe seleniumlibrary 
+Exmaple:
+Test Teardown    Close Browser
+
+------------------------12. Importance of Resource files/keyword in centralizing the reusable code--------------------------------------------------------------------------------
+1. create new file  resources.robot 
+2. add scripts on 
+3. go to demotest2.robot and add Resource resources.robot
+Example :Resource         resource.robot
+4. add variable for &{username} and ${invalid_password}
+5. add keywords for open browser   setup 
+6. add keywords for close browser  teardown 
+7. run it python -m robot .\tests\testDemo2.robot
+-------------------------13. How to send Arguments to keywords from the Test and from the variables--------------
+
+14. How to retrieve the list of webelements using Robot Framework - example
+
+- 7aga mohama el password not added on the logs
+-   Should Be Equal As Strings   is built in on the robot framework
+
+
+
+
+
+
+
+
+
+
+
+
+
