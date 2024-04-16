@@ -150,8 +150,22 @@ Example :Resource         resource.robot
 - 7aga mohama el password not added on the logs
 -   Should Be Equal As Strings   is built in on the robot framework
 
+--------------------------14. How to retrieve the list of webelements using Robot Framework - example--------------------------------
+create a list should use  ->  Create List   iphone X  Samsung Note 8   Nokia Edge   Blackberry
+save on variable          ->  @{expectedList}=
+create get webelements    ->  Get Webelements   css:.card-title
+create a variable         ->  ${elements}=
 
+-----------------15. Using Collections Library of Robot Framework to build functional logic---------------------------------------------
+add library collections
+add  Append To List
+dh el example    Append To List  ${actualList}     ${element.text}
 
+dh lama check two list are equal  ->   Lists Should Be Equal     @{expectedList}          @{actualList}
+
+------------important note----------------------------
+
+While using for loop we have to use @ while referring to the list that helps for loop to recognize that the mentioned variable is a list.
 
 
 
