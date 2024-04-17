@@ -16,5 +16,5 @@ Open the browser with the Mortgage payment url
     Create webdriver    Chrome  options.add_experimental_option("detach", True)
     GO TO               ${url}
 
-Close Browser session
-    Close Browser
+#Close Browser session
+#    Close Browser

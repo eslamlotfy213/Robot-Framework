@@ -171,6 +171,29 @@ While using for loop we have to use @ while referring to the list that helps for
 
 
 
+----------------------17. Handling Dropdowns of web pages with Robot Selenium keywords----------------
+
+
+
+
+---------------------18. Handling Alerts checkboxes of Login form with Selenium Libraries-------------------
+
+
+
+----------------21. How to apply parameterize the test with multiple data sets in Robot framework---------------
+
+
+
+----------------22. How Reporting works and generates in Robot Framework for Test results-----------------------
+
+
+------------------23. How and where Screenshots generated in Robot framework on test failures
+
+
+-------------------24. How to load the data from CSV files into Robot tests -external plugins
+
+
+
 
 
 
