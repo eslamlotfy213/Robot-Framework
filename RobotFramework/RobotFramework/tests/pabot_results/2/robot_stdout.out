@@ -1,0 +1,14 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.testDemo3 :: To validate the Login form                                 
+==============================================================================
+Validate Child window Functionality                                   | PASS |
+------------------------------------------------------------------------------
+Tests.testDemo3 :: To validate the Login form                         | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  /Users/rahulshetty/pythonProjects/RobotFramework/tests/pabot_results/2/output.xml

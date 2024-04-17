@@ -1,0 +1,18 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.testDemo6 :: To validate the Login form                                 
+==============================================================================
+Validate UnSuccesful Login                                            | PASS |
+------------------------------------------------------------------------------
+End to end ecommerce Product validation                               | PASS |
+------------------------------------------------------------------------------
+Select the Form and navigate to Child window                          | PASS |
+------------------------------------------------------------------------------
+Tests.testDemo6 :: To validate the Login form                         | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Output:  /Users/rahulshetty/pythonProjects/RobotFramework/tests/pabot_results/5/output.xml
